@@ -7,7 +7,7 @@ public abstract class Obstacle {
         this.value = value;
     }
 
-    public abstract boolean completeObstacle (Participant participant);
+    public abstract boolean completeObstacle(Participant participant);
 
     public double getValue() {
         return value;
