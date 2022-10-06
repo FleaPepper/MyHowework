@@ -15,7 +15,7 @@ public class Employee {
     }
 
     public String getInfo() {
-        return name + ", " + age + ", " + position + ", " + email;
+        return getName() + ", " + getAge() + ", " + getPosition() + ", " + getEmail();
     }
 
     public String getName() {
