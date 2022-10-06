@@ -1,5 +1,7 @@
 package ru.geekbrains.Lesson3;
 
+import java.util.Arrays;
+
 public class Group {
 
     private String groupName;
@@ -24,6 +26,10 @@ public class Group {
     }
 
     public void deleteEmployee(int index) {
+        if (index < 0 | index > employees.length) {
+            System.out.println("Incorrect index!");
+            return;
+        }
         if (employees[index] != null) {
             employees[index] = null;
             System.out.println("Employee has been deleted from the group.");
@@ -36,6 +42,10 @@ public class Group {
             if (employee != null)
                 System.out.println(employee.getInfo());
         }
+    }
+
+    public void clearGroup () {
+        Arrays.fill(employees, null);
     }
 
 
