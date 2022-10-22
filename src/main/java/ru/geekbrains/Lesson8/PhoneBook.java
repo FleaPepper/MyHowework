@@ -2,11 +2,12 @@ package ru.geekbrains.Lesson8;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class PhoneBook {
 
-    Map<String, ArrayList<String>> phoneBook = new HashMap<>();
+    Map<String, List<String>> phoneBook = new HashMap<>();
 
     public void add(String surname, String number) {
 
