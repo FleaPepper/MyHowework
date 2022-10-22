@@ -12,6 +12,7 @@ public class Main {
         phoneBook.add("Kate", "blabla");
 
         phoneBook.get("Snow");
+        phoneBook.printPhoneBook();
 
     }
 
